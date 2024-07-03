@@ -1,16 +1,5 @@
-/*
-import { readFile  } from '@/util/content'
-import { PATHS } from '@/util/paths'
-import { MarkdownContent } from '@/components/MarkdownContent'
-import { Menu } from '@/components/Menu'
-*/
-const Page = () => {
-	return (
-		<>
-			<main>
-				<h1>Organisations</h1>
-			</main>
-		</>
-	)
+import { NamedMarkdownPage } from '@/components/NamedMarkdownPage'
+
+export default async function Page() {
+	return <NamedMarkdownPage name='organisations'/>
 }
-export default Page

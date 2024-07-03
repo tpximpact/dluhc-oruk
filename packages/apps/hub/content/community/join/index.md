@@ -1,3 +1,3 @@
-# How it works
+# Join our community
 
-Find out how to adopt the standard and learn more about the features of the standard.
+TODO
