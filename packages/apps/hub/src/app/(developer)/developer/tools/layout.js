@@ -2,7 +2,7 @@ import { SubNavigation } from '@/components/SubNavigation'
 
 const Layout = ({ children }) => (
 	<>
-		<SubNavigation selected='tools'/>
+		<SubNavigation selected='tools' />
 		{children}
 	</>
 )

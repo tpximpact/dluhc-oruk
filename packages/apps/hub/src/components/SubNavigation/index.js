@@ -5,11 +5,9 @@ import { PageMargin } from '@tpx/PageMargin'
 
 export const SubNavigation = ({ selected }) => (
 	<PageMargin>
-	<nav className={styles.nav}>
-		<ol>
-			SUBNAV
-		</ol>
-	</nav>
+		<nav className={styles.nav}>
+			<ol>SUBNAV</ol>
+		</nav>
 	</PageMargin>
 )
 

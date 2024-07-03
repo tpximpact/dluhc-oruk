@@ -1,9 +1,5 @@
-
-
 import { NamedMarkdownPage } from '@/components/NamedMarkdownPage'
 
 export default async function Page() {
-	return (
-	<NamedMarkdownPage name='exporter' />
-	)
+	return <NamedMarkdownPage name='exporter' />
 }
