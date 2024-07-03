@@ -73,7 +73,7 @@ const Afterlinks = ({ data }) => (
 		<hr />
 		<ul>
 			{data.map(item => (
-				<li>
+				<li key={item.name}>
 					<Link href={item.url}>{item.name}</Link>
 				</li>
 			))}
