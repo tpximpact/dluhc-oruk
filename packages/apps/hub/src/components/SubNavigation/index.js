@@ -1,9 +1,10 @@
-import Link from 'next/link'
+//import Link from 'next/link'
 import styles from './SubNavigation.module.css'
-import { getSiteItems } from '@/util/content'
+//import { getSiteItems } from '@/util/content'
 import { PageMargin } from '@tpx/PageMargin'
 
-export const SubNavigation = ({ selected }) => (
+export const SubNavigation = (/*{ 
+selected }*/) => (
 	<PageMargin>
 		<nav className={styles.nav}>
 			<ol>SUBNAV</ol>
@@ -11,6 +12,7 @@ export const SubNavigation = ({ selected }) => (
 	</PageMargin>
 )
 
+/*
 const SubNavItem = ({ hide, selected, label, urlPath, offsite }) => {
 	if (hide) return
 	if (offsite)
@@ -30,3 +32,4 @@ const SubNavItem = ({ hide, selected, label, urlPath, offsite }) => {
 		</li>
 	)
 }
+*/
