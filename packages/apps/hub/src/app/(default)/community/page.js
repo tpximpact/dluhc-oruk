@@ -8,7 +8,7 @@ const Page = () => {
 	let items = childrenOfNamedSiteItem(SECTION)
 	// insert the dashboard into the in-page menu ¯\_(ツ)_/¯
 	const d = getNamedSiteItem('dashboard')
-	if(d) items.splice(3, 0, d)
+	if (d) items.splice(3, 0, d)
 
 	return (
 		<NamedMarkdownPage name={SECTION}>

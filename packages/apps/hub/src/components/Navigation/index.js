@@ -12,7 +12,7 @@ export const Navigation = ({ selected }) => (
 	</nav>
 )
 
-const NavItem = ({ hide,selected, label, urlPath, offsite }) => {
+const NavItem = ({ hide, selected, label, urlPath, offsite }) => {
 	if (hide) return
 	if (offsite)
 		return (

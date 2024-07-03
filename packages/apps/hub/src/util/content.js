@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
-import structure from '/content/site.json'
+import structure from '/content/sitemap.json'
 
 const flatten = (a, parent) => {
 	a = JSON.parse(JSON.stringify(a))
@@ -31,9 +31,9 @@ export const flattenSite = () => {
 	return flatten(structure)
 }
 
-export const getNamedSiteItem = name =>{
-	const r =  flattenSite().filter(item => item.name === name)[0]
-return r
+export const getNamedSiteItem = name => {
+	const r = flattenSite().filter(item => item.name === name)[0]
+	return r
 }
 
 export const getSiteItems = () => structure
@@ -41,7 +41,7 @@ export const getSiteItems = () => structure
 export const childrenOfNamedSiteItem = name => {
 	const item = getNamedSiteItem(name)
 	if (!item) return
-	return(item.children.map(child => getNamedSiteItem(child)))
+	return item.children.map(child => getNamedSiteItem(child))
 }
 
 export const PATHS = {

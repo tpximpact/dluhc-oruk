@@ -8,13 +8,12 @@ const Page = () => {
 	const items = buildItemMenuData(SECTION)
 	// insert the dashboard into the in-page menu ¯\_(ツ)_/¯
 	const d = getNamedSiteItem('dashboard')
-	if(d) items.push(d)
+	if (d) items.push(d)
 
 	return (
-		
-			<NamedMarkdownPage name={SECTION}>
+		<NamedMarkdownPage name={SECTION}>
 			<Menu items={items} />
-			</NamedMarkdownPage>
+		</NamedMarkdownPage>
 	)
 }
 export default Page

@@ -4,7 +4,6 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 const NAME = 'api-query'
 
 export default async function Page() {
-
 	const pageData = getNamedSiteItem(NAME)
 	const markdownRaw = readFile({
 		folder: pageData.contentPath
