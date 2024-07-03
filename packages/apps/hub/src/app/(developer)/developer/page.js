@@ -1,17 +1,17 @@
-import { readFile } from '@/util/content'
-import { MarkdownContent } from '@/components/MarkdownContent'
-// import { Menu } from '@/components/Menu'
 
-const SECTION = 'developer'
+import { SubNavigation } from '@/components/SubNavigation'
+import { NamedMarkdownPage } from '@/components/NamedMarkdownPage'
+import { Menu } from '@/components/Menu'
+import { childrenOfNamedSiteItem} from '@/util/content'
 
 const Page = () => {
-	const markdownRaw = readFile({
-		folder: SECTION
-	})
-
+	const tools = childrenOfNamedSiteItem('tools')
 	return (
 		<>
-			<MarkdownContent raw={markdownRaw} />
+			<SubNavigation />
+			<NamedMarkdownPage name='developers' autoMenu={false}>
+				<Menu items={tools}/>
+				</NamedMarkdownPage>
 		</>
 	)
 }
