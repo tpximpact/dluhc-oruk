@@ -1,4 +1,4 @@
-import { readFile, childrenOfNamedSiteItem, flattenSite } from '@/util/content'
+import { readFile, childrenOfNamedSiteItem, getNamedSiteItem } from '@/util/content'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Menu } from '@/components/Menu'
 
@@ -9,14 +9,13 @@ const Page = () => {
 		folder: SECTION
 	})
 
-	const items = childrenOfNamedSiteItem(SECTION)
-	// TODO add dashboard numbers.splice(2, 0, 3);
+	let items = childrenOfNamedSiteItem(SECTION)
+	// insert the dashboard into the in-page menu ¯\_(ツ)_/¯
+	const d = getNamedSiteItem('dashboard')
+	if(d) items.splice(3, 0, d)
 
 	return (
 		<>
-		{
-JSON.stringify(flattenSite())
-		}
 			<MarkdownContent raw={markdownRaw} />
 			<Menu items={items} folder={SECTION} />
 		</>

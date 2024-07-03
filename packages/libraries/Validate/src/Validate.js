@@ -3,7 +3,7 @@ import { LoremIpsum } from '@tpx/LoremIpsum'
 
 export const Validate = () => (
 	<main>
-		<h1>Validate tool</h1>
+		<p>Hello, validator</p>
 		<LoremIpsum />
 	</main>
 )

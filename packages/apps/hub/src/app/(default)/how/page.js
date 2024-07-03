@@ -15,7 +15,7 @@ const Page = () => {
 	return (
 		<>
 			<MarkdownContent raw={markdownRaw} />
-			<Menu items={items} folder={SECTION} />
+			<Menu items={items} />
 		</>
 	)
 }

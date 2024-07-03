@@ -2,24 +2,24 @@ import fs from 'fs'
 import { join } from 'path'
 import structure from '/content/site.json'
 
-const flatten = (a,parent) => {
+const flatten = (a, parent) => {
 	a = JSON.parse(JSON.stringify(a))
-	/*if (parent) {
+	if (parent) {
 		parent = JSON.parse(JSON.stringify(parent))
-	}*/
+	}
 	let result = []
 	a.forEach(item => {
 		let items = []
 		if (parent) {
 			item.parent = parent.name
-			if (! item.offsite) {
-			item.urlPath = parent.urlPath + "/" + item.urlPath 
-			item.contentPath = parent.contentPath + "/" + item.contentPath
+			if (!item.offsite) {
+				item.urlPath = parent.urlPath + '/' + item.urlPath
+				item.contentPath = parent.contentPath + '/' + item.contentPath
 			}
 		}
 		if (item.children) {
-			items = flatten(item.children,item)
-			item.children=item.children.map(child =>child.name)
+			items = flatten(item.children, item)
+			item.children = item.children.map(child => child.name)
 		}
 		items.push(item)
 		result = result.concat(items)
@@ -31,13 +31,18 @@ export const flattenSite = () => {
 	return flatten(structure)
 }
 
-export const getNamedSiteItem = name => flattenSite().filter(item => item.name === name)[0]
+export const getNamedSiteItem = name =>{
+	const r =  flattenSite().filter(item => item.name === name)[0]
+return r
+}
 
 export const getSiteItems = () => structure
 
-export const childrenOfNamedSiteItem = name => getNamedSiteItem(name).children.map(
-	child =>  getNamedSiteItem(child)
-)
+export const childrenOfNamedSiteItem = name => {
+	const item = getNamedSiteItem(name)
+	if (!item) return
+	return(item.children.map(child => getNamedSiteItem(child)))
+}
 
 export const PATHS = {
 	contentRoot: 'content',
@@ -46,16 +51,19 @@ export const PATHS = {
 
 const FILE_EXTENSION = 'md'
 
-export const buildItemMenuData = dir =>
-	allFilesOfType(getPath(dir), FILE_EXTENSION)
+export const buildItemMenuData = dir => {
+	const baseURL = '/how/'
+	const files = allFilesOfType(getPath(dir), FILE_EXTENSION)
 		.filter(f => f !== 'index.md')
 		.map(item => ({
-			target: fileNameToTarget(item),
-			text: fileNameToText(item)
+			urlPath: baseURL + fileNameToURL(item),
+			label: fileNameToLabel(item)
 		}))
+	return files
+}
 
-const fileNameToTarget = fileName => fileName.split('.')[0]
-const fileNameToText = fileName => {
+const fileNameToURL = fileName => fileName.split('.')[0]
+const fileNameToLabel = fileName => {
 	let result = fileName.split('.')[0]
 	const regex = /^[0-9]*/i
 	result = result.replace(regex, '')
