@@ -1,21 +1,11 @@
-import { readFile } from '@/util/content'
-import { MarkdownContent } from '@/components/MarkdownContent'
 import { Header } from '@/components/Header'
-import { Main } from '@tpx/Main'
+import { NamedMarkdownPage } from '@/components/NamedMarkdownPage'
 
 const SECTION = 'about'
 
-const Page = () => {
-	const markdownRaw = readFile({
-		folder: SECTION
-	})
-	return (
+const Page = () => 
 		<>
 			<Header selected={SECTION} />
-			<Main>
-				<MarkdownContent raw={markdownRaw} autoMenu={true} />
-			</Main>
+			<NamedMarkdownPage name={SECTION}/>
 		</>
-	)
-}
 export default Page

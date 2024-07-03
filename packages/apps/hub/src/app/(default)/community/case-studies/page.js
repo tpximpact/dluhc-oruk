@@ -1,21 +1,17 @@
-import { readFile } from '@/util/content'
-//import { PATHS } from '@/util/paths'
-import { MarkdownContent } from '@/components/MarkdownContent'
+import { getNamedSiteItem } from '@/util/content'
 import { buildItemMenuData } from '@/util/content'
 import { Menu } from '@/components/Menu'
+import { NamedMarkdownPage } from '@/components/NamedMarkdownPage'
 
 const Page = () => {
-	const markdownRaw = readFile({
-		folder: '/community/case-studies'
-	})
-
-	const items = buildItemMenuData('/community/case-studies')
+	const NAME = 'case-studies'
+	const pageData = getNamedSiteItem(NAME)
+	const items = buildItemMenuData(pageData.contentPath)
 
 	return (
-		<>
-			<MarkdownContent raw={markdownRaw} />
-			<Menu items={items} folder={'community/case-studies'} />
-		</>
+		<NamedMarkdownPage name={NAME}>
+			<Menu items={items} />
+		</NamedMarkdownPage>
 	)
 }
 export default Page

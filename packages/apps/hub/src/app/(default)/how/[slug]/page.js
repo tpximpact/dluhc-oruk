@@ -1,8 +1,8 @@
 import { slugsFrom, readFile } from '@/util/content'
-import { PATHS } from '@/util/paths'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { Main } from '@tpx/Main'
 
-const SUBFOLDER = PATHS.how
+const SUBFOLDER = "/how"
 
 export const generateStaticParams = () => slugsFrom(SUBFOLDER)
 
@@ -13,11 +13,13 @@ const Page = ({ params }) => {
 		folder: SUBFOLDER
 	})
 	return (
+		<Main>
 		<MarkdownContent
 			raw={markdownRaw}
 			autoMenu={true}
 			afterLinks={[{ url: '/how/02-features-of-the-standard', name: 'Features of the standard' }]}
 		/>
+		</Main>
 	)
 }
 export default Page
