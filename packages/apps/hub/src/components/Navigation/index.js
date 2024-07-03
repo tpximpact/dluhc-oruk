@@ -26,7 +26,7 @@ const NavItem = ({ selected, label, urlPath, offsite }) => {
 
 	return (
 		<li>
-			<Link href={'/' + urlPath}>{label}</Link>
+			<Link href={urlPath}>{label}</Link>
 		</li>
 	)
 }

@@ -2,20 +2,20 @@
 	{
 		"name": "about",
 		"label": "About Open Referral UK",
-		"urlPath": "about",
-		"contentPath": "about"
+		"urlPath": "/about",
+		"contentPath": "/about"
 	},
 	{
 		"name": "how",
 		"label": "How it works",
-		"urlPath": "how",
-		"contentPath": "how"
+		"urlPath": "/how",
+		"contentPath": "/how"
 	},
 	{
 		"name": "community",
 		"label": "Community",
-		"urlPath": "community",
-		"contentPath": "community",
+		"urlPath": "/community",
+		"contentPath": "/community",
 		"children": [
 			{
 				"name": "organisations",
@@ -46,8 +46,8 @@
 	{
 		"name": "developers",
 		"label": "For developers",
-		"urlPath": "developer",
-		"contentPath": "developer",
+		"urlPath": "/developer",
+		"contentPath": "/developer",
 		"children": [
 			{
 				"name": "tools",
@@ -73,7 +73,7 @@
 	{
 		"name": "contact",
 		"label": "Contact us",
-		"urlPath": "contact",
-		"contentPath": "contact"
+		"urlPath": "/contact",
+		"contentPath": "/contact"
 	}
 ]

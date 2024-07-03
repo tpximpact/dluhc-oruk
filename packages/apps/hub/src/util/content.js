@@ -4,9 +4,9 @@ import structure from '/content/site.json'
 
 const flatten = (a,parent) => {
 	a = JSON.parse(JSON.stringify(a))
-	if (parent) {
+	/*if (parent) {
 		parent = JSON.parse(JSON.stringify(parent))
-	}
+	}*/
 	let result = []
 	a.forEach(item => {
 		let items = []
