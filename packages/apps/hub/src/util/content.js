@@ -1,6 +1,5 @@
 import fs from 'fs'
 import { join } from 'path'
-
 import structure from '/content/site.json'
 
 const flatten = (a,parentName) => {
@@ -10,7 +9,7 @@ const flatten = (a,parentName) => {
 		let items = []
 		if (item.children) {
 			items = flatten(item.children,item.name)
-			delete item.children
+			item.children=item.children.map(child =>child.name)
 		}
 		item.parent = parentName
 		items.push(item)
@@ -23,9 +22,13 @@ export const flattenSite = () => {
 	return flatten(structure)
 }
 
-export const getNamedSiteItem = name => flattenSite().filter(item => item.name === name)
+export const getNamedSiteItem = name => flattenSite().filter(item => item.name === name)[0]
 
 export const getSiteItems = () => structure
+
+export const childrenOfNamedSiteItem = name => getNamedSiteItem(name).children.map(
+	child =>  getNamedSiteItem(child)
+)
 
 export const PATHS = {
 	contentRoot: 'content',

@@ -1,4 +1,4 @@
-import { readFile, getNamedSiteItem, flattenSite } from '@/util/content'
+import { readFile, childrenOfNamedSiteItem } from '@/util/content'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Menu } from '@/components/Menu'
 
@@ -9,13 +9,13 @@ const Page = () => {
 		folder: SECTION
 	})
 
-	const items = getNamedSiteItem(SECTION).children
+	const items = childrenOfNamedSiteItem(SECTION)
 	// TODO add dashboard numbers.splice(2, 0, 3);
 
 	return (
 		<>
 		{
-JSON.stringify(flattenSite())
+JSON.stringify(items)
 		}
 			<MarkdownContent raw={markdownRaw} />
 			<Menu items={items} folder={SECTION} />
