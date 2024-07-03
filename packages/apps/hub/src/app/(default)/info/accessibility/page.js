@@ -1,13 +1,18 @@
-import { readFile } from '@/util/content'
-import { PATHS } from '@/util/paths'
+import { readFile, getNamedSiteItem } from '@/util/content'
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-const SUBFOLDER = PATHS.info.accessibility
+const NAME = 'accessibility'
 
-const Page = () => {
+export default async function Page() {
+
+	const pageData = getNamedSiteItem(NAME)
 	const markdownRaw = readFile({
-		folder: SUBFOLDER
+		folder: pageData.contentPath
 	})
-	return <MarkdownContent raw={markdownRaw} />
+
+	return (
+		<>
+			<MarkdownContent raw={markdownRaw} />
+		</>
+	)
 }
-export default Page

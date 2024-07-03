@@ -92,11 +92,12 @@ hr {
 	width: 100%;
 }
 
+/*
 section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: var(--justify-important);
-}
+}*/
 
 section img,
 article img {

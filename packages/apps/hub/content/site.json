@@ -1,5 +1,33 @@
 [
 	{
+	
+			"name": "info",
+			"label": "Information",
+			"urlPath": "/info",
+			"contentPath": "/info",
+			"hide": true,
+			"children":[
+				{
+					"name": "accessibility",
+					"label": "Accessibility statement",
+					"urlPath": "accessibility",
+					"contentPath": "accessibility"
+				},
+				{
+					"name": "privacy",
+					"label": "Privacy policy",
+					"urlPath": "privacy",
+					"contentPath": "privacy"
+				},
+				{
+					"name": "terms",
+					"label": "Terms and conditions",
+					"urlPath": "terms",
+					"contentPath": "terms"
+				}
+			]
+	},
+	{
 		"name": "about",
 		"label": "About Open Referral UK",
 		"urlPath": "/about",
