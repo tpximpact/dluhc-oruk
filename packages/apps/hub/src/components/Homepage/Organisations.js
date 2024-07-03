@@ -1,5 +1,6 @@
 import { Section } from '@tpx/Section'
 import Link from 'next/link'
+import styles from './Homepage.module.css'
 
 const Org = ({ url, name, logo }) => (
 	<li>
@@ -30,7 +31,7 @@ export const Organisations = () => {
 					Feature your organisation
 				</a>
 			</div>
-			<ul>
+			<ul className={styles.organisations}>
 				{data.map(d => (
 					<Org key={d.logo} {...d} />
 				))}

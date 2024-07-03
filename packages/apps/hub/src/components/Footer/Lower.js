@@ -80,7 +80,7 @@ export const Lower = () => (
 				/>
 			</Columns>
 
-			<Columns layout='411'>
+			<Columns layout='411' className={styles.bottomAlign}>
 				<div>Copyright © 2019–2024 Open Referral UK</div>
 				<div>
 					<ul>
