@@ -2,16 +2,25 @@ import fs from 'fs'
 import { join } from 'path'
 import structure from '/content/site.json'
 
-const flatten = (a,parentName) => {
+const flatten = (a,parent) => {
 	a = JSON.parse(JSON.stringify(a))
+	if (parent) {
+		parent = JSON.parse(JSON.stringify(parent))
+	}
 	let result = []
 	a.forEach(item => {
 		let items = []
+		if (parent) {
+			item.parent = parent.name
+			if (! item.offsite) {
+			item.urlPath = parent.urlPath + "/" + item.urlPath 
+			item.contentPath = parent.contentPath + "/" + item.contentPath
+			}
+		}
 		if (item.children) {
-			items = flatten(item.children,item.name)
+			items = flatten(item.children,item)
 			item.children=item.children.map(child =>child.name)
 		}
-		item.parent = parentName
 		items.push(item)
 		result = result.concat(items)
 	})

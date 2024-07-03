@@ -1,4 +1,4 @@
-import { readFile, childrenOfNamedSiteItem } from '@/util/content'
+import { readFile, childrenOfNamedSiteItem, flattenSite } from '@/util/content'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Menu } from '@/components/Menu'
 
@@ -15,7 +15,7 @@ const Page = () => {
 	return (
 		<>
 		{
-JSON.stringify(items)
+JSON.stringify(flattenSite())
 		}
 			<MarkdownContent raw={markdownRaw} />
 			<Menu items={items} folder={SECTION} />
