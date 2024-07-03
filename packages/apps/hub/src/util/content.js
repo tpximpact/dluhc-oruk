@@ -1,6 +1,32 @@
 import fs from 'fs'
 import { join } from 'path'
 
+import structure from '/content/site.json'
+
+const flatten = (a,parentName) => {
+	a = JSON.parse(JSON.stringify(a))
+	let result = []
+	a.forEach(item => {
+		let items = []
+		if (item.children) {
+			items = flatten(item.children,item.name)
+			delete item.children
+		}
+		item.parent = parentName
+		items.push(item)
+		result = result.concat(items)
+	})
+	return result
+}
+
+export const flattenSite = () => {
+	return flatten(structure)
+}
+
+export const getNamedSiteItem = name => flattenSite().filter(item => item.name === name)
+
+export const getSiteItems = () => structure
+
 export const PATHS = {
 	contentRoot: 'content',
 	developer: 'developer'

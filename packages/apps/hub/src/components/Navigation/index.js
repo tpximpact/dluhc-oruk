@@ -1,32 +1,32 @@
 import Link from 'next/link'
 import styles from './Navigation.module.css'
-import { NAVIGATION_ITEMS } from '@/util/navigation'
+import { getSiteItems } from '@/util/content'
 
 export const Navigation = ({ selected }) => (
 	<nav className={styles.nav}>
 		<ol>
-			{NAVIGATION_ITEMS.map(item => (
-				<NavItem key={item.target} selectedTarget={selected} {...item} />
+			{getSiteItems().map(item => (
+				<NavItem key={item.urlPath} selected={selected === item.name} {...item} />
 			))}
 		</ol>
 	</nav>
 )
 
-const NavItem = ({ selectedTarget, target, text, offsite }) => {
+const NavItem = ({ selected, label, urlPath, offsite }) => {
 	if (offsite)
 		return (
-			<li className={styles.offsite}>
-				<a href={target} target='_new'>
-					{text}
+			<li classlabel={styles.offsite}>
+				<a href={urlPath} target='_new'>
+					{label}
 				</a>
 			</li>
 		)
 
-	if (selectedTarget === target) return <li className={styles.selected}>{text}</li>
+	if (selected) return <li className={styles.selected}>{label}</li>
 
 	return (
 		<li>
-			<Link href={'/' + target}>{text}</Link>
+			<Link href={'/' + urlPath}>{label}</Link>
 		</li>
 	)
 }

@@ -21,6 +21,7 @@ You can use OpenReferralUK to access data feeds from third parties which may hav
 We welcome and encourage other websites to link to openreferraluk.org.
 
 You must [contact us](/contact) for permission if you want to either:
+
 - charge your website’s users to click on a link to any page on Open Referral UK
 - say your website is associated with or endorsed by Open Referral UK
 
@@ -29,6 +30,7 @@ You must [contact us](/contact) for permission if you want to either:
 OpenReferralUK links to websites and data feeds that are managed by other organisations. We do not have any control over the content on these websites.
 
 We’re not responsible for:
+
 - the protection of any information you give to these websites
 - any loss or damage that may come from your use of these websites, or any other websites they link to
 
@@ -55,6 +57,7 @@ The most up to date version of our content will always be on OpenReferralUK.
 ## Disclaimer
 
 While we make every effort to keep OpenReferralUK up to date, we do not provide any guarantees, conditions or warranties that the information will be:
+
 - current
 - secure
 - accurate
@@ -64,6 +67,7 @@ While we make every effort to keep OpenReferralUK up to date, we do not provide 
 We do not publish advice on OpenReferralUK. You should get professional or specialist advice before doing anything on the basis of the content.
 
 We’re not liable for any loss or damage that may come from using OpenReferralUK. This includes:
+
 - any direct, indirect or consequential losses
 - any loss or damage caused by civil wrongs (‘tort’, including negligence), breach of contract or otherwise
 - the use of OpenReferralUK and any websites that are linked to or from it
@@ -72,6 +76,7 @@ We’re not liable for any loss or damage that may come from using OpenReferralU
 This applies if the loss or damage was foreseeable, arose in the normal course of things or you advised us that it might happen.
 
 This includes (but is not limited to) the loss of your:
+
 - income or revenue
 - salary, benefits or other payments
 - business
@@ -85,6 +90,7 @@ This includes (but is not limited to) the loss of your:
 - wasted management or office time
 
 We may still be liable for:
+
 - death or personal injury arising from our negligence
 - fraudulent misrepresentation
 - any other liability which cannot be excluded or limited under applicable law
@@ -92,6 +98,7 @@ We may still be liable for:
 ## Requests to remove content
 
 You can ask for content to be removed from OpenReferralUK. We’ll remove content:
+
 - in order to comply with data protection legislation covering the rights and freedoms of individuals
 - if it breaches copyright laws, contains sensitive personal data or material that may be considered obscene or defamatory
 

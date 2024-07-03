@@ -1,10 +1,11 @@
-import { PATHS } from '@/util/paths'
 import { Header } from '@/components/Header'
 import { Main } from '@tpx/Main'
 
+const SECTION = 'how'
+
 const Layout = ({ children }) => (
 	<>
-		<Header selected={PATHS.how} />
+		<Header selected={SECTION} />
 		<Main>{children}</Main>
 	</>
 )

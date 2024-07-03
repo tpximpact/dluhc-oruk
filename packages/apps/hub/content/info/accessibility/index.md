@@ -2,9 +2,10 @@
 
 This statement applies to content published on the [https://openreferraluk.org](/) domain.
 
-This website is run by [Porism](https://porism.com/). It is designed to be used by as many people as possible. The text should be clear and simple to understand. 
+This website is run by [Porism](https://porism.com/). It is designed to be used by as many people as possible. The text should be clear and simple to understand.
 
 You should be able to:
+
 - change colours, contrast levels and fonts
 - navigate most of the website using just a keyboard
 - navigate most of the website using speech recognition software
@@ -16,6 +17,7 @@ We’ve also made the website text as simple as possible to understand.
 ## How accessible this website is
 
 Parts of this website are not fully accessible. For example:
+
 - the community forum section of the website
 - the mailing list form does not notify when errors occur
 
@@ -26,6 +28,7 @@ We will update the statement when issues are fixed or when we expect them to be 
 [Tell us if you need information in a different format](/contact).
 
 In your message, include:
+
 - the web address (URL) of the content
 - your email address and name
 - the format you need - for example, plain text, braille, BSL, large print or audio CD
@@ -53,9 +56,11 @@ This website is partially compliant with the [Web Content Accessibility Guidelin
 The content listed below is non-accessible for the following reasons.
 
 ### Non-compliance with the accessibility regulations
+
 Users are not made aware of error messages on the newsletter sign up form. This fails WCAG 4.1.3 success criterion (Status Messages).
 
 ### Content developed and published by third parties
+
 The forum is a third party tool and may not meet accessibility standards. A [public audit](https://docs.google.com/document/d/1RY3Ez5UfgAgBt7zhfRyjxmT6jdBciy3aX6PNi65YK-4/edit#) has been published by the Teaching Systems Lab at MIT. Please contact [Porism](/contact) if you wish to request accessible alternatives to content on the forum.
 
 The Open Referral UK website is not able to guarantee the accessibility of third-party content that is neither funded nor developed by, nor under the control of Open Referral UK.

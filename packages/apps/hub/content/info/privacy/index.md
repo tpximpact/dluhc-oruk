@@ -7,6 +7,7 @@ Porism is the data controller. A data controller determines how and why personal
 ## What data we collect
 
 The personal data we collect from you includes:
+
 - questions, queries or feedback you leave, including your email address if you contact
 - your email address and subscription preferences when you sign up to our mailing list alerts
 - how you use our emails - for example whether you open them and which links you click on
@@ -16,6 +17,7 @@ The personal data we collect from you includes:
 We use Google Analytics software to collect information about how you use OpenReferralUK.org. This includes IP addresses. The data is anonymised before being used for analytics processing.
 
 Google Analytics processes anonymised information about:
+
 - the pages you visit on OpenReferralUK.org
 - how long you spend on each OpenReferralUK.org page
 - how you got to the site
@@ -30,10 +32,12 @@ We continuously test and monitor our data protection controls to make sure theyâ
 ## Why we need your data
 
 We collect information through Google Analytics to see how you use the site. We do this to help:
+
 - make sure the site is meeting the needs of its users
 - make improvements
 
 We also collect data in order to:
+
 - gather feedback to improve our services
 - send email updates alerts to users who request them
 - feature information about people and organisations who are using Open Referral UK when you authorise us to do so
@@ -54,6 +58,7 @@ The legal basis for processing all other personal data is that you have freely g
 The data we collect may be shared with our sub-contractors and with public bodies who sponsor or manage Open Referral UK. It may also be shared with our technology suppliers, for example our hosting provider.
 
 We will not:
+
 - sell or rent your data to third parties
 - share your data with third parties for marketing purposes
 - use your data in analytics
@@ -87,11 +92,13 @@ We also make sure that any third parties that we deal with keep all personal dat
 ## Your rights
 
 You have the right to request:
+
 - information about how your personal data is processed
 - a copy of that personal data
 - that anything inaccurate in your personal data is corrected immediately
 
 You can also:
+
 - raise an objection about how your personal data is processed
 - request that your personal data is erased if there is no longer a justification for it
 - ask that the processing of your personal data is restricted in certain circumstances
@@ -119,6 +126,7 @@ This privacy notice only does not cover data exposed from data feeds accessed vi
 ## Contact us or make a complaint
 
 Contact us if you:
+
 - have a question about anything in this privacy notice
 - think that your personal data has been misused or mishandled
 

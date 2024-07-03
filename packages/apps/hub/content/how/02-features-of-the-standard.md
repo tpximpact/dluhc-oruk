@@ -1,22 +1,23 @@
 # Features of the standard
 
-The Open Referral UK standard defines a comprehensive range of information that can be recorded for each service. 
+The Open Referral UK standard defines a comprehensive range of information that can be recorded for each service.
 
-The minimum information needed for a service is: 
+The minimum information needed for a service is:
+
 - name of service
 - unique identifier
 - name of service provider that runs the service
 
 ## Service information categories
- 
-![Alt](/standard_table.png “The standard can contain the following properties: Organisation, Service, Contacts, Eligibility, Location, Accessibility, Schedule, Taxonomies, Cost, Languages spoken")
 
+![Alt](/standard_table.png “The standard can contain the following properties: Organisation, Service, Contacts, Eligibility, Location, Accessibility, Schedule, Taxonomies, Cost, Languages spoken")
 
 ## Organisation - the service provider
 
 Every service is linked to a service provider.
 
 You can include a:
+
 - description
 - logo
 - web link
@@ -26,8 +27,8 @@ Most information is recorded about individual services, not the service provider
 
 ##Service
 
-The ‘service’ is the main piece of information to which most attributes belong. 
-As well as its name and identifier, a service can have: 
+The ‘service’ is the main piece of information to which most attributes belong.
+As well as its name and identifier, a service can have:
 a description
 web links
 details of how it is delivered, such as
@@ -47,10 +48,10 @@ Accessibility information is recorded for service locations.
 Schedule
 Each service can have a regular schedule. You can configure the frequency of the service, the days of the week and the times.
 Taxonomy
-The standard allows for taxonomy terms to be recorded against services, eligibility criteria and many other types of service attribute. 
+The standard allows for taxonomy terms to be recorded against services, eligibility criteria and many other types of service attribute.
 By using taxonomy terms from shared open taxonomies you make your data easier to understand and it can be combined with other people’s.
 Cost
 Service cost information can be recorded for different time periods and options.
 Review
-Service reviews are used to denote where official bodies have reviewed a service and provided a rating. 
-For example, OFSTED might have provided an ‘excellent’ rating or a specific council might have provided an ‘inspection passed’ rating.  Having access to ratings means frontline workers can make a more informed decision as to whether they want to recommend a service to people.
+Service reviews are used to denote where official bodies have reviewed a service and provided a rating.
+For example, OFSTED might have provided an ‘excellent’ rating or a specific council might have provided an ‘inspection passed’ rating. Having access to ratings means frontline workers can make a more informed decision as to whether they want to recommend a service to people.

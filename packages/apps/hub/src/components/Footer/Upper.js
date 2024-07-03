@@ -18,7 +18,7 @@ export const Upper = () => {
 	return (
 		<Section className={styles.upper}>
 			<PageMargin>
-				<div style={{marginBottom: "4rem"}}>
+				<div style={{ marginBottom: '4rem' }}>
 					<Link href='/'>
 						<Logo />
 					</Link>

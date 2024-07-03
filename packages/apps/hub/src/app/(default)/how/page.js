@@ -1,26 +1,21 @@
 import { readFile } from '@/util/content'
-import { PATHS } from '@/util/paths'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { buildItemMenuData } from '@/util/content'
 import { Menu } from '@/components/Menu'
 
+const SECTION = 'how'
+
 const Page = () => {
-	const folder = PATHS.how
 	const markdownRaw = readFile({
-		folder: folder
+		folder: SECTION
 	})
 
-	const items = buildItemMenuData(folder)
-	items.push({
-		absolute: true,
-		target: '/developer/tools/dashboard',
-		text: 'Data feed dashboard'
-	})
+	const items = buildItemMenuData(SECTION)
 
 	return (
 		<>
 			<MarkdownContent raw={markdownRaw} />
-			<Menu items={items} folder={folder} />
+			<Menu items={items} folder={SECTION} />
 		</>
 	)
 }

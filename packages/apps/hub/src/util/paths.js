@@ -8,6 +8,6 @@ export const PATHS = {
 	info: {
 		accessibility: 'info/accessibility',
 		privacy: 'info/privacy',
-		terms: 'info/terms',
+		terms: 'info/terms'
 	}
 }

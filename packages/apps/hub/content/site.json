@@ -1,0 +1,79 @@
+[
+	{
+		"name": "about",
+		"label": "About Open Referral UK",
+		"urlPath": "about",
+		"contentPath": "about"
+	},
+	{
+		"name": "how",
+		"label": "How it works",
+		"urlPath": "how",
+		"contentPath": "how"
+	},
+	{
+		"name": "community",
+		"label": "Community",
+		"urlPath": "community",
+		"contentPath": "community",
+		"children": [
+			{
+				"name": "organisations",
+				"label": "Organisations adopting the standard",
+				"urlPath": "organisations",
+				"contentPath": "organisations"
+			},
+			{
+				"name": "forum",
+				"urlPath": "https://forum.openreferral.org",
+				"offsite": "true"
+			},
+			{
+				"name": "case-studies",
+				"label": "Case studies",
+				"urlPath": "case-studies",
+				"contentPath": "case-studies"
+			},
+
+			{
+				"name": "join",
+				"label": "Join our community",
+				"urlPath": "join",
+				"contentPath": "join"
+			}
+		]
+	},
+	{
+		"name": "developers",
+		"label": "For developers",
+		"urlPath": "developer",
+		"contentPath": "developer",
+		"children": [
+			{
+				"name": "tools",
+				"label": "Tools",
+				"urlPath": "tools",
+				"contentPath": "tools",
+				"children": [
+					{
+						"name": "dashboard",
+						"label": "Data feed dashboard",
+						"urlPath": "dashboard",
+						"contentPath": "dashboard"
+					}
+				]
+			}
+		]
+	},
+	{
+		"label": "Forum",
+		"urlPath": "https://forum.openreferral.org",
+		"offsite": true
+	},
+	{
+		"name": "contact",
+		"label": "Contact us",
+		"urlPath": "contact",
+		"contentPath": "contact"
+	}
+]

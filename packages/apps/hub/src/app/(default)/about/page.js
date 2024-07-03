@@ -1,20 +1,19 @@
 import { readFile } from '@/util/content'
-import { PATHS } from '@/util/paths'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Header } from '@/components/Header'
 import { Main } from '@tpx/Main'
 
-const SUBFOLDER = PATHS.about
+const SECTION = 'about'
 
 const Page = () => {
 	const markdownRaw = readFile({
-		folder: SUBFOLDER
+		folder: SECTION
 	})
 	return (
 		<>
-			<Header selected={SUBFOLDER} />
+			<Header selected={SECTION} />
 			<Main>
-				<MarkdownContent raw={markdownRaw} autoMenu={true}/>
+				<MarkdownContent raw={markdownRaw} autoMenu={true} />
 			</Main>
 		</>
 	)

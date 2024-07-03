@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const Menu = ({ folder, items }) => {
 	return (
 		<main>
-			{items.map(item => (
+			{/*items.map(item => (
 				<MenuItem
 					key={item.target}
 					offsite={item.offsite}
@@ -14,7 +14,7 @@ export const Menu = ({ folder, items }) => {
 					text={item.text}
 					target={item.target}
 				/>
-			))}
+			))*/}
 		</main>
 	)
 }
