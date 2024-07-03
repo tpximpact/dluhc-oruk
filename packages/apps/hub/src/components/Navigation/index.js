@@ -1,33 +1,14 @@
-import Link from 'next/link'
+
 import styles from './Navigation.module.css'
 import { getSiteItems } from '@/util/content'
+import {NavigationItem} from "@/components/NavigationItem"
 
 export const Navigation = ({ selected }) => (
 	<nav className={styles.nav}>
 		<ol>
 			{getSiteItems().map(item => (
-				<NavItem key={item.urlPath} selected={selected === item.name} {...item} />
+				<NavigationItem key={item.urlPath} styles={styles} selected={selected === item.name} {...item} />
 			))}
 		</ol>
 	</nav>
 )
-
-const NavItem = ({ hide, selected, label, urlPath, offsite }) => {
-	if (hide) return
-	if (offsite)
-		return (
-			<li classlabel={styles.offsite}>
-				<a href={urlPath} target='_new'>
-					{label}
-				</a>
-			</li>
-		)
-
-	if (selected) return <li className={styles.selected}>{label}</li>
-
-	return (
-		<li>
-			<Link href={urlPath}>{label}</Link>
-		</li>
-	)
-}
