@@ -8,6 +8,7 @@ export const Crumbtrail= ({
 	<PageMargin>
 	<nav className={styles.crumbtrail}>
 		<ol>
+		<NavigationItem urlPath="/" label="Home" />
 			{crumbs.map(
 				(data,index) => <NavigationItem key={index} {...data} />
 			)}
