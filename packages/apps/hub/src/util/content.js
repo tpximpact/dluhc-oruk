@@ -2,6 +2,25 @@ import fs from 'fs'
 import { join } from 'path'
 import structure from '/content/sitemap.json'
 
+export const buildCrumbtrail = (current) => {
+	let result = [
+		{
+			label: "Home",
+			urlPath: "/"
+		},
+		{
+			label: "Developer",
+			urlPath:"/developer"
+		}
+		,
+		{
+			label: "Tools",
+			urlPath: "/tools"
+		}
+	]
+	return result
+}
+
 const flatten = (a, parent) => {
 	a = JSON.parse(JSON.stringify(a))
 	if (parent) {
