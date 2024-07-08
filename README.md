@@ -12,12 +12,12 @@ Port of static content to markdown is a work in progress.
 
 ✅ = done(15) 🚧 = todo(21) ❗= special case(5)
 
-- ✅ ┌ ○ /
-- 🚧 ├ ○ /\_not-found
-- ✅ ├ ○ /about
-- ✅ ├ ○ /community
-- ✅ ├ ○ /community/case-studies
-- 🚧 ├ ├ /community/case-studies/01-todo  
+- ┌ ○ / ✅ 
+- ├ ○ /\_not-found 🚧 
+- ├ ○ /about ✅ 
+- ├ ○ /community ✅ 
+- ├ ○ /community/case-studies ✅ 
+- ├ ├ /community/case-studies/01-todo  🚧 
 - 🚧 ├ ├ /community/case-studies/02-todo
 - 🚧 ├ ├ /community/case-studies/03-todo
 - 🚧 ├ ├ /community/case-studies/04-todo
