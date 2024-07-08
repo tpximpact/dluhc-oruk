@@ -2,7 +2,7 @@ import fs from 'fs'
 import { join } from 'path'
 import structure from '/content/sitemap.json'
 
-const crumbtrailItem = (current,accumulator) => {
+const crumbtrailItem = (current, accumulator) => {
 	let found = getNamedSiteItem(current)
 	accumulator.push(found)
 	if (found.parent) {
@@ -11,7 +11,7 @@ const crumbtrailItem = (current,accumulator) => {
 	return accumulator
 }
 
-export const buildCrumbtrail = (current) => crumbtrailItem(current,[]).reverse()
+export const buildCrumbtrail = current => crumbtrailItem(current, []).reverse()
 
 const flatten = (a, parent) => {
 	a = JSON.parse(JSON.stringify(a))

@@ -1,17 +1,17 @@
 .lower {
 	background: #eee;
 	padding: 1rem 0 1rem;
-	margin:0 !important;
+	margin: 0 !important;
 }
 
 .upper {
 	background: #f3f3f3;
 	padding: 3rem 0 1rem;
-	margin:0 !important;
+	margin: 0 !important;
 }
 
 .bottomAlign,
-.bottomAlign div{
+.bottomAlign div {
 	align-self: flex-end;
 }
 
