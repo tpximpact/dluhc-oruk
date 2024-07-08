@@ -1,5 +1,11 @@
 [
 	{
+		"name": "not-found",
+		"label": "404",
+		"contentPath": "/not-found",
+		"hide": true
+	},
+	{
 		"name": "info",
 		"label": "Information",
 		"urlPath": "/info",
