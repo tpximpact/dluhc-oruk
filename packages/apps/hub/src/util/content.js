@@ -2,6 +2,15 @@ import fs from 'fs'
 import { join } from 'path'
 import structure from '/content/sitemap.json'
 
+import organisations from '/content/community/organisations/organisations.json'
+
+export const getOrganisationsData = () => organisations 
+export const getOrganisationsCounts = () => ({
+	considering: 8,
+	adopting:8,
+	adopted:13
+})
+
 const crumbtrailItem = (current, accumulator) => {
 	let found = getNamedSiteItem(current)
 	accumulator.push(found)

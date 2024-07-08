@@ -10,7 +10,7 @@ Creating a PR against `main` will also trigger build and deployment of a preview
 
 Port of static content to markdown is a work in progress.
 
-✅ = done(16) 🚧 = todo(20) ❗= special case(5)
+✅ = done(16) 🚧 = todo(19) ❗= special case(6)
 
 - ┌ ○ / ✅
 - ├ ○ /\_not-found ✅
@@ -29,8 +29,8 @@ Port of static content to markdown is a work in progress.
 - ├ ├ /community/case-studies/10-todo 🚧
 - ├ ├ /community/case-studies/11-todo 🚧
 - ├ ├ /community/case-studies/12-todo 🚧
-- ├ ○ /community/join ❗
-- ├ ○ /community/organisations 🚧
+- ├ ○ /community/join  ✅
+- ├ ○ /community/organisations ❗❗❗ WORK IN PROGRESS ❗❗❗
 - ├ ○ /contact ✅
 - ├ ○ /developer ✅
 - ├ ○ /developer/api ✅
