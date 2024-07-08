@@ -1,5 +1,8 @@
 import { Section } from '@tpx/Section'
 import Link from 'next/link'
+import { OrganisationStats } from '@/components/OrganisationStats'
+import {getOrganisationsCounts}  from '@/util/content'
+
 import styles from './Homepage.module.css'
 
 const Org = ({ url, name, logo }) => (
@@ -12,21 +15,12 @@ const Org = ({ url, name, logo }) => (
 
 export const Organisations = () => {
 	let data = require('../../../content/home/organisations.json')
+	const counts = getOrganisationsCounts()
 	return (
 		<Section>
 			<h2>Organisations using Open Referral UK</h2>
+			<OrganisationStats data={counts}/>
 			<div>
-				<ul className='numbers-container'>
-					<li className='numbers'>
-						<span>8</span> considering
-					</li>
-					<li className='numbers'>
-						<span>8</span> adopting
-					</li>
-					<li className='numbers'>
-						<span>13</span> adopted
-					</li>
-				</ul>
 				<a href='/register' className='button button-primary'>
 					Feature your organisation
 				</a>
@@ -40,3 +34,4 @@ export const Organisations = () => {
 		</Section>
 	)
 }
+

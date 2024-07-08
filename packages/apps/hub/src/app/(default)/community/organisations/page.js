@@ -3,6 +3,7 @@ import {getOrganisationsData,getOrganisationsCounts}  from '@/util/content'
 import styles from './Organisations.module.css'
 import { PageMargin } from '@tpx/PageMargin'
 import { Section } from '@tpx/Section'
+import { OrganisationStats } from '@/components/OrganisationStats'
 
 export default async function Page() {
 	return <><NamedMarkdownPage name='organisations' />
@@ -15,7 +16,7 @@ data={getOrganisationsData()} />
 }
 
 const Organisations = ({data, counts}) =><Section>
-	<Counts data={counts}/>
+	<OrganisationStats data={counts}/>
 	<ol className={styles.Organisations}>
 		{
 			data.map(
@@ -25,13 +26,7 @@ const Organisations = ({data, counts}) =><Section>
 	</ol>
 </Section>
 
-const Counts = ({data}) =><div>
-{
-Object.keys(data).map((k,index) => 
-	<span className={styles.countItem} key={index}><span className={styles.countCount}>{data[k]}</span> <span className={styles.countKey}>{k}</span></span>
-)
-}
-	</div>
+
 
 const Organisation = ({
 links,
