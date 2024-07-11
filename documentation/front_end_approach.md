@@ -1,9 +1,7 @@
 Memorandum: Adopting Open Referral UK - Front end architecture and approach
-Distribution: Matos, Catarina; O'Brien, Jay; Thacker, Mike; Unsworth, Ben
-Author: Hilton,G (TPXImpact) guy.hilton@tpximpact.com
-Date: 25 June, 2024
-
----
+Distribution: All eyes
+Author: Hilton, G (TPXImpact) guy.hilton@tpximpact.com
+Date: 
 
 # Adopting Open Referral UK - Front end architecture and approach
 
@@ -13,7 +11,7 @@ Date: 25 June, 2024
 
 - 1.2 There would be (at least) two ways of approaching this brief. The first would be to accept the existing architecture and confine our work strictly to the validator and dashboard tools. This approach has the benefit of minimalism and remains a possible option. It would not however allow us to deliver to the quality of accessibilty to which we would usually aspire, would accept inbuilt scalability limitations on the dashboard, and would require manual co-ordination of styling accross the several affected sites (ie the front end, the developer site, the validator, the dashboard). The latter in particular involves accepting an unknown level of risk and potentially error-prone manual work. 
 
-- 1.3 For this reason the proposed approach instead accepts a known quantity of additional work at the beginning of the process - to consolidate and render consistent the various elements upfront - with the result of streamlining and de-risking the process especially in the later stages, and delivering to an overall higher, more accessible, more maintainable and more robust techncial standard.
+- 1.3 For this reason the proposed approach instead accepts a managed quantity of additional work at the beginning of the process - to consolidate and render consistent the various elements upfront - with the result of streamlining and de-risking the process especially in the later stages. This will enable us to deliver to an overall higher, more accessible, more maintainable and more robust techncial standard.
 
 - 1.4 Most of the existing online properties can be - and will benefit from being - consolidated into a common platform.
 
