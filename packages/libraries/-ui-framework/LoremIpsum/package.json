@@ -1,0 +1,9 @@
+{
+	"name": "@tpx/LoremIpsum",
+	"version": "0.0.1",
+	"main": "src/index.js",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"react": "^18"
+	}
+}
