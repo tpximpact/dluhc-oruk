@@ -1,9 +1,10 @@
 import React from 'react'
+import { Main } from '@tpx/Main'
 
 export const Dashboard = () => {
 	return (
-		<main>
-			<p>Hello Dashboard</p>
-		</main>
+		<Main>
+			Dashboard UI here
+		</Main>
 	)
 }

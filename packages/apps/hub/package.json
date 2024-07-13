@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@oruk/Dashboard": "0.0.1",
-		"@oruk/Validate": "0.0.1",
+		"@oruk/Validator": "0.0.1",
 		"@tpx/LoremIpsum": "0.0.1",
 		"@tpx/PageMargin": "0.0.1",
 		"@tpx/Columns": "0.0.1",

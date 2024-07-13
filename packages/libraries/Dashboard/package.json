@@ -4,6 +4,7 @@
 	"main": "src/index.js",
 	"license": "UNLICENSED",
 	"dependencies": {
-		"react": "^18"
+		"react": "^18",
+		"@tpx/Main":"0.0.1"
 	}
 }
